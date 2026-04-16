@@ -1,3 +1,147 @@
-h1 {
-  color: red;
+.navigation_bar {
+  display: flex;
+  align-items: center;
+  font-family: "Trebuchet MS";
+}
+.navigation_bar-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.navigation_bar-links {
+  flex-direction: row;
+  margin: 0px 30px;
+}
+@media only screen and (max-width: 640px) {
+  .navigation_bar-links {
+    opacity: 0;
+    margin: 0;
+    font-size: 0px;
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vw;
+}
+.intro h1 {
+  font-size: 50px;
+  font-weight: 100;
+  text-align: center;
+  font-family: "Lucida Console";
+}
+.intro_para {
+  text-align: center;
+  margin: 0 10vw;
+  width: 550px;
+}
+@media only screen and (max-width: 640px) {
+  .intro_para {
+    width: 80vw;
+  }
+}
+
+.aboutMe {
+  display: block;
+}
+.aboutMe img {
+  width: 20vw;
+  height: 25vw;
+  float: right;
+}
+@media only screen and (max-width: 640px) {
+  .aboutMe img {
+    width: 40vw;
+    height: 50vw;
+    float: none;
+  }
+}
+.aboutMe_content {
+  align-content: space-evenly;
+}
+.aboutMe_content-para {
+  text-align: center;
+  padding: 10px;
+  width: 75vw;
+}
+@media only screen and (max-width: 640px) {
+  .aboutMe_content-para {
+    width: 90vw;
+  }
+}
+
+.skills_section img {
+  width: 10vh;
+  height: 10vh;
+}
+.skills_section--icons {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+@media only screen and (max-width: 640px) {
+  .skills_section--icons {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+.skills_section--icons div {
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 640px) {
+  .skills_section--icons div {
+    flex-direction: column;
+    font-size: 40px;
+    justify-content: normal;
+  }
+  .skills_section--icons div img {
+    width: 20vh;
+    height: 20vh;
+  }
+}
+
+.portfolio_section img {
+  width: 30vh;
+  height: 23vh;
+}
+.portfolio_section--row {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+@media only screen and (max-width: 640px) {
+  .portfolio_section--row {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+.portfolio_section--row div .eyeIcon {
+  width: 25px;
+  height: 15px;
+  background-color: white;
+  border-radius: 100%;
+}
+@media only screen and (max-width: 640px) {
+  .portfolio_section--row div {
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: space-evenly;
+  }
+  .portfolio_section--row div img {
+    width: 25vh;
+    height: 20vh;
+  }
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+footer img {
+  width: 10vh;
+  height: 10vh;
+  margin: 2px;
+  background-color: whitesmoke;
+  border-radius: 100%;
 }
