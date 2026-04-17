@@ -8,10 +8,11 @@ $mobile: 640px;
         @content;
     }
 }
-//Allows footer to have no margin around it
+//Allows footer to have no margin around it while letting every other area still have theirs
 body {
     margin: 0;
     background-color: #fffcf2;
+    font-family: "Trebuchet MS";
 }
 
 .navigation_bar,
@@ -19,7 +20,7 @@ body {
 .aboutMe,
 .skills_section,
 .portfolio_section {
-    margin: 5px;
+    margin: 10px;
 }
 
 h1 {
@@ -33,7 +34,13 @@ h2 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-//Horizontal bar that seperates each section
+ul {
+    list-style-type: circle;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+//Horizontal bar that seperates each section, cleans up design of webpage
 hr {
     display: flex;
     height: 1px;
@@ -49,7 +56,6 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: "Trebuchet MS";
 
     &-title {
         font-size: 30px;
@@ -67,6 +73,7 @@ hr {
             font-size: 0px;
         }
     }
+
     &-firstname {
         color: #857885;
     }
@@ -92,7 +99,7 @@ hr {
 
 .aboutMe {
     display: block;
-    font-family: "Trebuchet MS";
+
     img {
         width: 20vw;
         height: 25vw;
@@ -100,16 +107,12 @@ hr {
         @include phone_display() {
             width: 40vw;
             height: 50vw;
+            //Means that image collapses to underneath About Me when on mobile
             float: none;
         }
     }
-    ul {
-        list-style-type: circle;
-        margin-bottom: 1em;
-        margin-right: 1em;
-    }
 
-    &_content { 
+    &_content {
         align-content: space-evenly;
         &-para {
             text-align: center;
@@ -119,15 +122,13 @@ hr {
                 width: 90vw;
             }
         }
-        &-list{
+        &-list {
             font-size: smaller;
         }
     }
-    
 }
 
 .skills_section {
-    font-family: "Trebuchet MS";
     img {
         width: 10vh;
         height: 10vh;
@@ -160,7 +161,6 @@ hr {
 }
 
 .portfolio_section {
-    font-family: "Trebuchet MS";
     img {
         width: 30vh;
         height: 23vh;
@@ -213,15 +213,16 @@ footer {
     @include phone_display() {
         margin-top: 0;
     }
-    .footer_links {
-        display: flex;
-        margin: 0px 5vh;
-        justify-content: space-around;
-        img {
-            width: 7vh;
-            height: 7vh;
-            margin: 2px;
-            border-radius: 100%;
-        }
+}
+
+.footer_links {
+    display: flex;
+    margin: 0px 5em;
+    justify-content: space-around;
+    img {
+        width: 7vh;
+        height: 7vh;
+        margin: 2px;
+        border-radius: 100%;
     }
 }

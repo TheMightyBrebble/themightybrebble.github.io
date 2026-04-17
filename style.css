@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: #fffcf2;
+  font-family: "Trebuchet MS";
 }
 
 .navigation_bar,
@@ -8,7 +9,7 @@ body {
 .aboutMe,
 .skills_section,
 .portfolio_section {
-  margin: 5px;
+  margin: 10px;
 }
 
 h1 {
@@ -20,6 +21,12 @@ h1 {
 
 h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+ul {
+  list-style-type: circle;
+  margin-bottom: 1em;
+  margin-right: 1em;
 }
 
 hr {
@@ -37,7 +44,6 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "Trebuchet MS";
 }
 .navigation_bar-title {
   font-size: 30px;
@@ -79,7 +85,6 @@ hr {
 
 .aboutMe {
   display: block;
-  font-family: "Trebuchet MS";
 }
 .aboutMe img {
   width: 20vw;
@@ -92,11 +97,6 @@ hr {
     height: 50vw;
     float: none;
   }
-}
-.aboutMe ul {
-  list-style-type: circle;
-  margin-bottom: 1em;
-  margin-right: 1em;
 }
 .aboutMe_content {
   align-content: space-evenly;
@@ -115,9 +115,6 @@ hr {
   font-size: smaller;
 }
 
-.skills_section {
-  font-family: "Trebuchet MS";
-}
 .skills_section img {
   width: 10vh;
   height: 10vh;
@@ -149,9 +146,6 @@ hr {
   }
 }
 
-.portfolio_section {
-  font-family: "Trebuchet MS";
-}
 .portfolio_section img {
   width: 30vh;
   height: 23vh;
@@ -205,12 +199,13 @@ footer {
     margin-top: 0;
   }
 }
-footer .footer_links {
+
+.footer_links {
   display: flex;
-  margin: 0px 5vh;
+  margin: 0px 5em;
   justify-content: space-around;
 }
-footer .footer_links img {
+.footer_links img {
   width: 7vh;
   height: 7vh;
   margin: 2px;
