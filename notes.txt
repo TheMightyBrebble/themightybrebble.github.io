@@ -1,13 +1,5 @@
 Tasks to Complete-
 
 Nav Bar:
-- Align list to right side
 - Make content fully disappear when on mobile, not just opacity 0
 
-Portfolio:
--add content
--make links to actually send users to projects
-
-Footer:
--add content
--add black bar to icons
