@@ -9,11 +9,21 @@
     <body>
         <header>
             <nav class="navigation_bar">
-                <span class="navigation_bar-title">Bradley Cartwright</span>
+                <div class="navigation_bar-title">
+                    <span class="navigation_bar-firstname">Bradley </span>
+                    <span class="navigation_bar-lastname">Cartwright</span>
+                </div>
                 <div>
-                    <span class="navigation_bar-links">About</span>
-                    <span class="navigation_bar-links">Portfolio</span>
-                    <span class="navigation_bar-links">Contact</span>
+                    <span class="navigation_bar-links">
+                        <a href="#aboutMe">About</a>
+                    </span>
+
+                    <span class="navigation_bar-links">
+                        <a href="#portfolio">Portfolio</a>
+                    </span>
+                    <span class="navigation_bar-links">
+                        <a href="#contact">Contact</a>
+                    </span>
                 </div>
             </nav>
         </header>
@@ -28,9 +38,11 @@
         </div>
 
         <main>
-            <div class="aboutMe">
+            <div id="aboutMe" class="aboutMe">
                 <div class="aboutMe_content">
                     <h2>About Me</h2>
+                    <hr />
+
                     <img src="Images/Bradley1.jpg" alt="Photo of Me" />
                     <p class="aboutMe_content-para">
                         I am a 22 year old university graduate, with a degree in
@@ -51,11 +63,42 @@
                         research I did for the project and how indepth I went
                         into it.
                     </p>
+
+                    <h2>Experience</h2>
+                    <hr />
+                    <ul>
+                        <li>
+                            Trainee Software Engineer - Nology
+                            <ul class="aboutMe_content-list">
+                                Training scheme ran by Nology that teaches me
+                                coding languages such as HTML, Javascript etc.
+                            </ul>
+                        </li>
+                        <li>
+                            Computer Science BSc - Keele University
+                            <ul class="aboutMe_content-list">
+                                University Degree done at Keele University. Main
+                                coding language was Java, taught along with
+                                modules on cyber security, software engineering
+                                and database systems.
+                            </ul>
+                        </li>
+                        <li>
+                            ITQ Qualification
+                            <ul class="aboutMe_content-list">
+                                ITQ Qualification received during my A-Levels.
+                                Taught me skills such as photoshop, video
+                                production and editing, and other such generic
+                                computing skills.
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
             <div class="skills_section">
                 <h2>Skills</h2>
+                <hr />
                 <div class="skills_section--icons">
                     <div>
                         <img src="Images/gitIcon.png" alt="Git" />
@@ -79,10 +122,11 @@
                 </div>
             </div>
 
-            <div class="portfolio_section">
+            <div id="portfolio" class="portfolio_section">
                 <h2>Portfolio.</h2>
+                <hr />
                 <div class="portfolio_section--row">
-                    <div class="project">
+                    <div class="portfolio_section--project">
                         <img src="Images/Dissertation.png" alt="Dissertation" />
                         <p>
                             Project 1 - Third Year Disseration
@@ -95,9 +139,9 @@
                         </p>
                     </div>
                     <div class="project">
-                        <img src="Images/Website.png" alt="Dissertation" />
+                        <img src="Images/Website.png" alt="Website" />
                         <p>
-                            Project 2
+                            Project 2 - This Website
                             <a href="index.html"
                                 ><img
                                     class="eyeIcon"
@@ -119,19 +163,29 @@
                 </div>
             </div>
 
-            <div class="contact_section"></div>
+            <div id="contact" class="contactMe">
+                <h2>Contact Me Here!</h2>
+                <!-- Reference to send an email to my _nology account -->
+                <a href="mailto:“Bradley.Cartwright@nology.io”">
+                    <img src="Images/get_in_touch.png" alt="Contact Me!" />
+                </a>
+            </div>
         </main>
 
         <footer>
-            <a href="https://github.com/TheMightyBrebble">
-                <img src="Images/githubIcon.png" alt="Github" />
-            </a>
-            <a href="https://www.instagram.com/themightybrebble/">
-                <img src="Images/Instagram_icon.png" alt="Instagram" />
-            </a>
-            <a href="https://www.linkedin.com/in/bradley-cartwright-8988bb33a/">
-                <img src="Images/LinkedIn_logo.png" alt="Linkedin" />
-            </a>
+            <div class="footer_links">
+                <a href="https://github.com/TheMightyBrebble">
+                    <img src="Images/githubIcon.png" alt="Github" />
+                </a>
+                <a href="https://www.instagram.com/themightybrebble/">
+                    <img src="Images/Instagram_icon.png" alt="Instagram" />
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/bradley-cartwright-8988bb33a/"
+                >
+                    <img src="Images/LinkedIn_logo.png" alt="Linkedin" />
+                </a>
+            </div>
         </footer>
     </body>
 </html>

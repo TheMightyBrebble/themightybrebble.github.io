@@ -1,6 +1,42 @@
+body {
+  margin: 0;
+  background-color: #fffcf2;
+}
+
+.navigation_bar,
+.intro,
+.aboutMe,
+.skills_section,
+.portfolio_section {
+  margin: 5px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Lucida Console";
+}
+
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+hr {
+  display: flex;
+  height: 1px;
+  width: 5em;
+  border: 0;
+  border-top: 2px solid #3c4f76;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
 .navigation_bar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   font-family: "Trebuchet MS";
 }
 .navigation_bar-title {
@@ -18,17 +54,17 @@
     font-size: 0px;
   }
 }
+.navigation_bar-firstname {
+  color: #857885;
+}
+.navigation_bar-lastname {
+  color: #553d36;
+}
 
 .intro {
   display: flex;
   flex-direction: column;
   margin-bottom: 5vw;
-}
-.intro h1 {
-  font-size: 50px;
-  font-weight: 100;
-  text-align: center;
-  font-family: "Lucida Console";
 }
 .intro_para {
   text-align: center;
@@ -43,6 +79,7 @@
 
 .aboutMe {
   display: block;
+  font-family: "Trebuchet MS";
 }
 .aboutMe img {
   width: 20vw;
@@ -55,6 +92,10 @@
     height: 50vw;
     float: none;
   }
+}
+.aboutMe ul {
+  list-style-type: circle;
+  margin-bottom: 1em;
 }
 .aboutMe_content {
   align-content: space-evenly;
@@ -69,7 +110,13 @@
     width: 90vw;
   }
 }
+.aboutMe_content-list {
+  font-size: smaller;
+}
 
+.skills_section {
+  font-family: "Trebuchet MS";
+}
 .skills_section img {
   width: 10vh;
   height: 10vh;
@@ -83,6 +130,7 @@
   .skills_section--icons {
     display: grid;
     grid-template-columns: auto auto;
+    padding-right: 10px;
   }
 }
 .skills_section--icons div {
@@ -100,11 +148,15 @@
   }
 }
 
+.portfolio_section {
+  font-family: "Trebuchet MS";
+}
 .portfolio_section img {
   width: 30vh;
   height: 23vh;
 }
 .portfolio_section--row {
+  margin-top: 10px;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
@@ -112,13 +164,13 @@
 @media only screen and (max-width: 640px) {
   .portfolio_section--row {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
   }
 }
 .portfolio_section--row div .eyeIcon {
   width: 25px;
-  height: 15px;
-  background-color: white;
+  height: 25px;
+  background-color: #101935;
   border-radius: 100%;
 }
 @media only screen and (max-width: 640px) {
@@ -126,21 +178,40 @@
     flex-direction: column;
     font-size: 20px;
     justify-content: space-evenly;
+    margin-bottom: 50px;
   }
   .portfolio_section--row div img {
-    width: 25vh;
-    height: 20vh;
+    width: 38vh;
+    height: 30vh;
   }
+}
+
+.contactMe {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 footer {
   background-color: black;
-  display: flex;
-  justify-content: center;
+  padding: 1em;
+  display: block;
+  text-align: center;
+  margin-top: 3em;
 }
-footer img {
-  width: 10vh;
-  height: 10vh;
+@media only screen and (max-width: 640px) {
+  footer {
+    margin-top: 0;
+  }
+}
+footer .footer_links {
+  display: flex;
+  margin: 0px 5vh;
+  justify-content: space-around;
+}
+footer .footer_links img {
+  width: 7vh;
+  height: 7vh;
   margin: 2px;
   background-color: whitesmoke;
   border-radius: 100%;

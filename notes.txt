@@ -3,18 +3,6 @@ Tasks to Complete-
 Nav Bar:
 - Align list to right side
 - Make content fully disappear when on mobile, not just opacity 0
-- better font for name
-
-Title + intro:
--Add actual text to introduction
-
-About me:
-- align content into center
-
-Skills:
-- add paragraph aligned to Title
-- add images and text underneath
-- make images 3x3 grid
 
 Portfolio:
 -add content
